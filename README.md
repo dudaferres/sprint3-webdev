@@ -57,6 +57,6 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 ---
 Desenvolvido pelas alunas da FIAP:
 
-Maria Eduarda Ferrés
-Julia Sayuri Yokoo
-Gabriela Queiroga
+- Maria Eduarda Ferrés
+- Julia Sayuri Yokoo
+- Gabriela Queiroga
