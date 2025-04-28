@@ -55,8 +55,9 @@ http://localhost:5173
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
-Desenvolvido pelas alunas da FIAP:
 
-- Maria Eduarda Ferrés
-- Julia Sayuri Yokoo
-- Gabriela Queiroga
+## Integrantes do grupo
+
+- Gabriela Queiroga - RM 560035
+- Julia Sayuri Yokoo - RM 560541
+- Maria Eduarda Ferrés - RM 560418
