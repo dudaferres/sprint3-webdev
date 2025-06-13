@@ -1,0 +1,79 @@
+// Variáveis
+$primary-color: #2196f3;
+$primary-light: #64b5f6;
+$secondary-color: #4caf50;
+$secondary-light: #81c784;
+$accent-color: #ff5722;
+$accent-light: #ff8a65;
+$text-color: #2c3e50;
+$text-light: #34495e;
+$background-color: white;
+$white: #ffffff;
+$shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-hover: 0 8px 15px rgba(0, 0, 0, 0.15);
+$gradient: linear-gradient(135deg, $primary-color, $secondary-color);
+$gradient-hover: linear-gradient(135deg, $primary-light, $secondary-light);
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin card-hover {
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $shadow-hover;
+  }
+}
+
+@mixin button-style {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $shadow-hover;
+  }
+}
+
+// Estilos globais
+:root {
+  --primary-color: #{$primary-color};
+  --primary-light: #{$primary-light};
+  --secondary-color: #{$secondary-color};
+  --secondary-light: #{$secondary-light};
+  --accent-color: #{$accent-color};
+  --accent-light: #{$accent-light};
+  --text-color: #{$text-color};
+  --text-light: #{$text-light};
+  --background-color: #{$background-color};
+  --white: #{$white};
+  --shadow: #{$shadow};
+  --shadow-hover: #{$shadow-hover};
+  --gradient: #{$gradient};
+  --gradient-hover: #{$gradient-hover};
+}
+
+body {
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      $primary-color -90%,
+      transparent 40%
+    ),
+    radial-gradient(circle at 0% 0%, $secondary-color -90%, transparent 40%);
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+// Componentes
+@import "./components/calculator";
+@import "./components/header";
+@import "./components/about";
+@import "./components/faq";
+@import "./components/footer";

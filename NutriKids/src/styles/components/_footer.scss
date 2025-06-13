@@ -1,0 +1,131 @@
+.footer {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(240, 245, 255, 0.95)
+  );
+  border-top: 1px solid rgba(33, 150, 243, 0.1);
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: $gradient;
+    opacity: 0.3;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: $gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    a {
+      color: $text-light;
+      text-decoration: none;
+      transition: color 0.3s;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: $gradient;
+        transition: width 0.3s;
+      }
+      &:hover {
+        color: $primary-color;
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &-social {
+    display: flex;
+    gap: 1rem;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(
+        145deg,
+        rgba($white, 0.9),
+        rgba(240, 245, 255, 0.9)
+      );
+      box-shadow: $shadow;
+      color: $primary-color;
+      font-size: 1.3rem;
+      transition: all 0.3s;
+      &:hover {
+        background: $gradient;
+        color: $white;
+        transform: translateY(-3px);
+        box-shadow: $shadow-hover;
+      }
+    }
+  }
+
+  &-contact {
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-radius: 8px;
+      transition: all 0.3s;
+      .icon {
+        color: $primary-color;
+        margin-right: 0.75rem;
+        font-size: 1.2rem;
+      }
+      &:hover {
+        background: rgba($white, 0.7);
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  &-copyright {
+    background: linear-gradient(
+      180deg,
+      rgba(240, 245, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    );
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(33, 150, 243, 0.1);
+    text-align: center;
+    color: $text-light;
+    font-size: 1rem;
+  }
+}

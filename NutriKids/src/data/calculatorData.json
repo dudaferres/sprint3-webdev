@@ -1,0 +1,47 @@
+{
+  "faixasEtarias": [
+    {
+      "diasMaximos": 4,
+      "mlPorKg": 45,
+      "mamadasPorDia": 8,
+      "mensagem": "Como seu bebê tem {idade} dias, ele pode beber entre 30-60 ml/kg por dia."
+    },
+    {
+      "diasMaximos": 90,
+      "mlPorKg": 150,
+      "mamadasPorDia": 6,
+      "mensagem": "Como seu bebê tem {idade} dias, ele deve beber cerca de 150 ml/kg por dia."
+    },
+    {
+      "diasMaximos": 180,
+      "mlPorKg": 130,
+      "mamadasPorDia": 5,
+      "mensagem": "Como seu bebê tem {idade} dias, ele deve beber cerca de 130 ml/kg por dia."
+    },
+    {
+      "diasMaximos": 270,
+      "mlPorKg": 110,
+      "mamadasPorDia": 4,
+      "mensagem": "Como seu bebê tem {idade} dias, ele deve beber cerca de 110 ml/kg por dia."
+    },
+    {
+      "diasMaximos": 365,
+      "mlPorKg": 100,
+      "mamadasPorDia": 3,
+      "mensagem": "Como seu bebê tem {idade} dias, ele deve beber cerca de 100 ml/kg por dia."
+    }
+  ],
+  "conversoesUnidades": {
+    "idade": {
+      "dias": 1,
+      "semanas": 7,
+      "meses": 30
+    },
+    "peso": {
+      "kg": 1,
+      "g": 0.001,
+      "lb": 0.45359237
+    }
+  },
+  "aviso": "Lembre-se de que a quantidade de fórmula infantil calculada aqui é apenas uma estimativa, cada bebê é único. Se você tiver alguma preocupação com a dieta do seu bebê, converse com seu pediatra."
+}
